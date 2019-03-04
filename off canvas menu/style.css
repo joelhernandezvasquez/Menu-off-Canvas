@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+
+.wrapper
+{
+	height:100vh;
+	display:grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: 500px 500px;
+	grid-template-areas: 
+	"container container"
+	"container1 container2";
+	
+}
+
+.offsite-container
+{
+	
+	position:fixed;
+	top:8px;
+	bottom:0;
+	left:-14rem;
+	width:14rem;
+	height:500px;
+	
+	
+	background:gray;
+	
+	
+}
+
+.container
+{
+	grid-area:container;
+	background:blue;
+	
+
+}
+
+.container1
+{
+	grid-area:container1;
+	background:red;
+}
+.container2
+{
+	grid-area:container2;
+	background:green;
+}
+
+.offsite-is-open .container
+{
+	transform: translateX(14rem);
+}
+
+.offsite-is-open .offsite-container
+{
+	transform: translateX(14rem);
+	
+}
+
+.menu
+{
+	margin-top:80px;
+	margin-left:20px;
+	
+}
+.menu li
+{
+	list-style-type: none;
+	padding:10px;
+}
+.menu a
+{
+	text-decoration: none;
+	color:white;
+	font-size: 1.8rem;
+}
+.menu a:hover
+{
+	color:aqua;
+}
+
+input[type="image"]
+{
+	margin-top:50px;
+	margin-left:40px;
+}
+h1
+{
+	font-size:3rem;
+	line-height: 1.5;
+}
+p
+{
+	font-size:2rem;
+}
+h1,p
+{
+	color:white;
+	margin-left:15px;
+	
+}
+
+
